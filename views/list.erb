@@ -1,6 +1,18 @@
-<div data-role="content">
-<p>Buttons are core widgets in jQuery Mobile, and are used within a wide range of other plugins.</p>
-<ul data-role="listview" data-inset="true" data-filter="true">
+<div data-role="content" >
+<p>Tap to play.
+ </p>
+
+<ul data-role="listview" class="ui-listview" data-inset="true" data-filter="true">
 <%= @list %>
 </ul>
+</div>
+<div data-role="footer" class="ui-bar" data-position="fixed" data-id="footer">
+<div data-role="controlgroup" data-type="horizontal">
+
+Repeat
+<a href="/repeat/off" data-ajax="false"  data-role="button" data-icon="delete">Off</a>
+	<a href="/repeat/one" data-ajax="false"  data-role="button" data-icon="forward">One</a>
+	<a href="/repeat/all" data-ajax="false"  data-role="button" data-icon="refresh">All</a>
+
+</div>
 </div>
